@@ -12,18 +12,20 @@ c.execute(
         "name" TEXT NOT NULL,
         "start_time" TEXT NOT NULL,
         "end_time" TEXT NOT NULL,
-        "interval" INTEGER DEFAULT 0
+        "interval" INTEGER DEFAULT 0,
+        "user" TEXT NOT NULL
     );
     '''
 )
 c.execute(
     '''
     INSERT INTO "infusion_schedule" VALUES (
-        3,
+        1,
         "贾一飞",
         "2021-01-01",
         "2021-12-31",
-        5
+        1,
+        "JiaYiFei"
     )
     '''
 )
